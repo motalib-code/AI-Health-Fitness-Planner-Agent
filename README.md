@@ -1,69 +1,40 @@
-# 🎧 Self-Guided AI Audio Tour Agent
+AI Health & Fitness Planner Agent 🏋️‍♂️
+The AI Health & Fitness Planner is a personalized health and fitness Agent powered by Agno AI Agent framework. This app generates tailored dietary and fitness plans based on user inputs such as age, weight, height, activity level, dietary preferences, and fitness goals.
 
-A conversational voice agent system that generates immersive, self-guided audio tours based on the user’s **location**, **areas of interest**, and **tour duration**. Built on a multi-agent architecture using OpenAI Agents SDK, real-time information retrieval, and expressive TTS for natural speech output.
+Features
+Health Agent and Fitness Agent
 
----
+The app has two phidata agents that are specialists in giving Diet advice and Fitness/workout advice respectively.
+Personalized Dietary Plans:
 
-## 🚀 Features
+Generates detailed meal plans (breakfast, lunch, dinner, and snacks).
+Includes important considerations like hydration, electrolytes, and fiber intake.
+Supports various dietary preferences like Keto, Vegetarian, Low Carb, etc.
+Personalized Fitness Plans:
 
-### 🎙️ Multi-Agent Architecture
+Provides customized exercise routines based on fitness goals.
+Covers warm-ups, main workouts, and cool-downs.
+Includes actionable fitness tips and progress tracking advice.
+Interactive Q&A: Allows users to ask follow-up questions about their plans.
 
-- **Orchestrator Agent**  
-  Coordinates the overall tour flow, manages transitions, and assembles content from all expert agents.
+Requirements
+The application requires the following Python libraries:
 
-- **History Agent**  
-  Delivers insightful historical narratives with an authoritative voice.
+agno
+google-generativeai
+streamlit
+Ensure these dependencies are installed via the requirements.txt file according to their mentioned versions
 
-- **Architecture Agent**  
-  Highlights architectural details, styles, and design elements using a descriptive and technical tone.
+How to Run
+Follow the steps below to set up and run the application: Before anything else, Please get a free Gemini API Key provided by Google AI here: https://aistudio.google.com/apikey
 
-- **Culture Agent**  
-  Explores local customs, traditions, and artistic heritage with an enthusiastic voice.
+Clone the Repository:
 
-- **Culinary Agent**  
-  Describes iconic dishes and food culture in a passionate and engaging tone.
-
----
-
-### 📍 Location-Aware Content Generation
-
-- Dynamic content generation based on user-input **location**
-- Real-time **web search integration** to fetch relevant, up-to-date details
-- Personalized content delivery filtered by user **interest categories**
-
----
-
-### ⏱️ Customizable Tour Duration
-
-- Selectable tour length: **15, 30, or 60 minutes**
-- Time allocations adapt to user interest weights and location relevance
-- Ensures well-paced and proportioned narratives across sections
-
----
-
-### 🔊 Expressive Speech Output
-
-- High-quality audio generated using **Gpt-4o Mini Audio**
-
-### How to get Started?
-
-1. Clone the GitHub repository
-
-```bash
 git clone https://github.com/Shubhamsaboo/awesome-llm-apps.git
-cd ai_agent_tutorials/ai_audio_tour_agent
-```
-2. Install the required dependencies:
+cd advanced_ai_agents/single_agent_apps/ai_health_fitness_agent
+Install the dependencies
 
-```bash
 pip install -r requirements.txt
-```
-3. Get your OpenAI API Key
+Run the Streamlit app
 
-- Sign up for an [OpenAI account](https://platform.openai.com/) (or the LLM provider of your choice) and obtain your API key.
-
-4. Run the Streamlit App
-```bash
-streamlit run ai_audio_tour_agent.py
-```
-
+streamlit run health_agent.py
